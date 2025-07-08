@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEAR lima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <<link rel="stylesheet" href="style.css" type="text/css" media="screen" />>
+</head>
+<body>
+    <div class="glitch-overlay"></div>
+    <div class="chicha-pattern"></div>
+
+
+    <div class="container">
+        <header class="header">
+            <img src="dear.svg" alt="donde el arte resiste" width="80%" height="auto"/>
+
+            <div class="floating-elements">
+                <div class="floating-shape"></div>
+                <div class="floating-shape"></div>
+                <div class="floating-shape"></div>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <a href="#artistas" class="nav-item">Artistas</a>
+            <a href="#galeria" class="nav-item">Galería</a>
+            <a href="#contacto" class="nav-item">Contacto</a>
+        </nav>
+
+        <div class="content-grid">
+            <div class="card">
+                <h3>Fusión Sónica</h3>
+                <p>Donde los ritmos ancestrales del barrio se encuentran con los beats electrónicos del futuro. Una experiencia auditiva que trasciende fronteras.</p>
+                <p class="text-glow">Próximo evento: Viernes 15 de Julio</p>
+            </div>
+
+            <div class="card">
+                <h3>Estética Rebelde</h3>
+                <p>Colores que gritan, tipografías que danzan y diseños que rompen las reglas. El underground limeño abraza la vanguardia europea.</p>
+                <p class="text-glow">Galería visual disponible</p>
+            </div>
+
+            <div class="card">
+                <h3>Cultura Urbana</h3>
+                <p>Desde las calles de Barrios Altos hasta los clubs de Berlín, celebramos la diversidad cultural que nos define como generación.</p>
+                <p class="text-glow">Conoce nuestra historia</p>
+            </div>
+
+            <div class="card">
+                <h3>Experimentación</h3>
+                <p>Laboratorio creativo donde las tradiciones se reinventan y los géneros se fusionan sin límites ni prejuicios.</p>
+                <p class="text-glow">Únete al experimento</p>
+            </div>
+        </div>
+
+        <section id="artistas" class="artistas">
+            <h1>Nuestros Artistas</h1>
+            <div class="artistas-grid">
+                <div class="artista-card">
+                    <img src="artistas/qkarachas.jpeg">
+                    <h3 class="artista-nombre">qkarachas</h3>
+                    <p class="artista-genero">punk</p>
+                    <p class="artista-descripcion">Rock neurodivergente</p>
+                </div>
+
+                <div class="artista-card">
+                    <img src="artistas/qomovirus.jpeg">
+                    <h3 class="artista-nombre">qomovirus</h3>
+                    <p class="artista-genero">Ilustración</p>
+                    <p class="artista-descripcion">Creador de mostritos</p>
+                </div>
+
+                <div class="artista-card">
+                    <img src="artistas/gadapuff.jpeg">
+                    <h3 class="artista-nombre">Gada.puff</h3>
+                    <p class="artista-genero">Teatro</p>
+                    <p class="artista-descripcion">Artista escenico</p>
+                </div>
+
+                <div class="artista-card">
+                    <img src="artistas/rahar24.jpeg">
+                    <h3 class="artista-nombre">Rahara XXIV</h3>
+                    <p class="artista-genero">graffiti</p>
+                    <p class="artista-descripcion">Un vampiro chupasangre limeño</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Conecta con Nosotros</h2>
+            <div class="contacto-grid">
+                <div class="contacto-item">
+                    <h3 class="contacto-titulo">Prensa</h3>
+                    <div class="contacto-info">
+                        <p>Medios y colaboraciones</p>
+                        <p><a href="mailto:prensa@dearlima.pe">prensa@dearlima.pe</a></p>
+                    </div>
+                </div>
+
+                <div  class="contacto-redes">
+                    <a href="#" style="color: #ff0080; text-decoration: none;">@dearlima</a>
+                    <a href="#" style="color: blue; text-decoration: none;">Facebook</a>
+                    <a href="#" style="color: red; text-decoration: none;">YouTube</a>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+    </div>
+    <script>
+        // Efecto de click en las cards
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    card.style.transform = 'translateY(-10px) scale(1.02)';
+                }, 150);
+            });
+        });
+
+        // Cambio dinámico de colores en el gradiente
+     // let hue = 0;
+     // setInterval(() => {
+     //     hue = (hue + 1) % 360;
+     //     document.body.style.filter = `hue-rotate(${hue}deg)`;
+     // }, 100);
+
+        // Efecto de parpadeo aleatorio en elementos
+        setInterval(() => {
+            const elements = document.querySelectorAll('.text-glow');
+            elements.forEach(el => {
+                if (Math.random() > 0.7) {
+                    el.style.textShadow = '0 0 30px #fff, 0 0 40px #ff0080, 0 0 50px #00ff80';
+                    setTimeout(() => {
+                        el.style.textShadow = '';
+                    }, 200);
+                }
+            });
+        }, 1000);
+
+    </script>
+</body>
+</html>
