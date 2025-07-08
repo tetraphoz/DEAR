@@ -25,37 +25,45 @@
             </div>
         </header>
 
+        <marquee scrollamount="20">
+        Este documental transmedia explora el pulso creativo de Lima Norte
+        por medio de los ojos de Arnold, un joven artísta que es parte de la
+        escena local, parte de una periferia donde el arte no busca
+        reconocimiento institucional, sino transformación social. A través de
+        murales, danzas callejeras y espacios autogestionados, otros artistas
+        como él, resisten la marginación cultural y construyen nuevas formas de
+        habitar su territorio. Lejos del mercado y del Estado, el arte aquí es
+        acto político, refugio colectivo y grito de identidad. Esta obra retrata
+        cómo la creación artística, nacida desde los márgenes, no solo
+        sobrevive: resiste y redefine la ciudad.
+        </marquee>
+
         <nav class="navigation">
             <a href="#artistas" class="nav-item">Artistas</a>
             <a href="#galeria" class="nav-item">Galería</a>
             <a href="#contacto" class="nav-item">Contacto</a>
         </nav>
 
-        <div class="content-grid">
-            <div class="card">
-                <h3>Fusión Sónica</h3>
-                <p>Donde los ritmos ancestrales del barrio se encuentran con los beats electrónicos del futuro. Una experiencia auditiva que trasciende fronteras.</p>
-                <p class="text-glow">Próximo evento: Viernes 15 de Julio</p>
-            </div>
 
-            <div class="card">
-                <h3>Estética Rebelde</h3>
-                <p>Colores que gritan, tipografías que danzan y diseños que rompen las reglas. El underground limeño abraza la vanguardia europea.</p>
-                <p class="text-glow">Galería visual disponible</p>
-            </div>
+        <!-- <div class="content-grid">
+             <div class="card">
+             <h3>Estética Rebelde</h3>
+             <p>Colores que gritan, tipografías que danzan y diseños que rompen las reglas. El underground limeño abraza la vanguardia europea.</p>
+             <p class="text-glow">Galería visual disponible</p>
+             </div>
 
-            <div class="card">
-                <h3>Cultura Urbana</h3>
-                <p>Desde las calles de Barrios Altos hasta los clubs de Berlín, celebramos la diversidad cultural que nos define como generación.</p>
-                <p class="text-glow">Conoce nuestra historia</p>
-            </div>
+             <div class="card">
+             <h3>Lima Norte</h3>
+             <p>Desde las calles de Barrios Altos hasta los clubs de Berlín, celebramos la diversidad cultural que nos define como generación.</p>
+             <p class="text-glow">Conoce nuestra historia</p>
+             </div>
 
-            <div class="card">
-                <h3>Experimentación</h3>
-                <p>Laboratorio creativo donde las tradiciones se reinventan y los géneros se fusionan sin límites ni prejuicios.</p>
-                <p class="text-glow">Únete al experimento</p>
-            </div>
-        </div>
+             <div class="card">
+             <h3>Transofrmación social</h3>
+             <p>Laboratorio creativo donde las tradiciones se reinventan y los géneros se fusionan sin límites ni prejuicios.</p>
+             <p class="text-glow">Únete al experimento</p>
+             </div>
+             </div> -->
 
         <section id="artistas" class="artistas">
             <h1>Nuestros Artistas</h1>
@@ -63,7 +71,7 @@
                 <div class="artista-card">
                     <img src="artistas/qkarachas.jpeg">
                     <h3 class="artista-nombre">qkarachas</h3>
-                    <p class="artista-genero">punk</p>
+                    <p class="artista-genero">Punk</p>
                     <p class="artista-descripcion">Rock neurodivergente</p>
                 </div>
 
@@ -78,20 +86,30 @@
                     <img src="artistas/gadapuff.jpeg">
                     <h3 class="artista-nombre">Gada.puff</h3>
                     <p class="artista-genero">Teatro</p>
-                    <p class="artista-descripcion">Artista escenico</p>
+                    <p class="artista-descripcion">Artista escenica</p>
                 </div>
 
                 <div class="artista-card">
                     <img src="artistas/rahar24.jpeg">
                     <h3 class="artista-nombre">Rahara XXIV</h3>
-                    <p class="artista-genero">graffiti</p>
+                    <p class="artista-genero">Graffiti</p>
                     <p class="artista-descripcion">Un vampiro chupasangre limeño</p>
                 </div>
             </div>
         </section>
 
-        <section id="galeria">
+        <hr />
 
+        <section id="galeria" class="galeria">
+            <h1>Galería</h1>
+            <div class="galeria-grid">
+                <img src="galeria/1.jpg" alt="" />
+                <img src="galeria/1.jpeg" alt="" />
+                <img src="galeria/2.jpeg" alt="" />
+                <img src="galeria/3.jpeg" alt="" />
+                <img src="galeria/4.jpeg" alt="" />
+                <img src="galeria/5.jpeg" alt="" />
+            </div>
         </section>
 
         <section id="contacto" class="contacto">
@@ -128,11 +146,11 @@
         });
 
         // Cambio dinámico de colores en el gradiente
-     // let hue = 0;
-     // setInterval(() => {
-     //     hue = (hue + 1) % 360;
-     //     document.body.style.filter = `hue-rotate(${hue}deg)`;
-     // }, 100);
+     let hue = 0;
+     setInterval(() => {
+         hue = (hue + 1) % 360;
+         document.body.style.background.filter = `hue-rotate(${hue}deg)`;
+     }, 100);
 
         // Efecto de parpadeo aleatorio en elementos
         setInterval(() => {

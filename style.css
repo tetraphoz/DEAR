@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+marquee {
+    font-size: 2rem;
+    color: black;
+    padding: 2rem;
+}
+
 body {
     font-family: 'Anonymous Pro', monospace;
     background: linear-gradient(45deg, #1d92ae, #00bf61, #f3d001, #fe65c2);
@@ -166,6 +172,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
 }
 
 
@@ -199,9 +206,46 @@ body {
 .artistas img{
     border-radius: 5%;
     height: 30rem;
-    widht: auto;
 }
 
+hr {
+    width: 70%;
+    border: 1px dotted black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.galeria h1 {
+    font-size: 5rem;
+    padding: 3rem;
+    color: black;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform .2s; /* Animation */
+    border-radius: 0.5rem;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.2);
+}
 .floating-elements {
     position: fixed;
     top: 0;
