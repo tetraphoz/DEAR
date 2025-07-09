@@ -364,3 +364,33 @@ hr {
     }
 }
 
+summary {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    color: blue;
+}
+
+details {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.noticia {
+    margin: 2rem;
+}
+
+.noticia h3{
+    padding: 1rem;
+}
+
+.noticia div{
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    border: 3px solid #fff;
+}
