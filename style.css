@@ -371,8 +371,8 @@ summary {
     text-align: center;
     padding: 2rem;
     text-decoration-line: underline;
-    text-decoration-color: blue;
-    color: blue;
+    text-decoration-color: #1d92ae;
+    color: #1d92ae;
 }
 
 details {
@@ -393,4 +393,29 @@ details {
     padding: 2rem;
     margin: 1rem;
     border: 3px solid #fff;
+}
+
+.anexos {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#anexos h1{
+    font-size: 5rem;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.anexos embed {
+    height: 2000px;
+    width: 40%;
+}
+
+.anexos div {
+    margin: 1rem;
 }
