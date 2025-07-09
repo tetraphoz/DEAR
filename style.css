@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+iframe {
+  display: inline-block;
+}
+
+.video {
+  text-align: center;
+  padding: 4rem;
+}
+
 marquee {
     font-size: 2rem;
     color: black;
@@ -49,6 +58,8 @@ body {
 
 .container {
     position: relative;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     backdrop-filter: blur(0.5px);
 }
